@@ -1,23 +1,23 @@
 # Arthur Riduet *Développeur Front-end, designer*
 
 ## Presentation
-Passionné par l’informatique, ayant travaillé en freelance en tant que designer et développeur full-stack ainsi qu’en tant que développeur javascript chez Formagraph. Je m'intéresse aux nouvelles technologies et à leurs différents domaines d’application et me tiens informé des dernières avancées dans ce domaine. La culture prend également une place importante dans ma vie, notamment la musique et le cinema, domaines dans lesquels je me suis essayé en amateur.
+Passionné par l’informatique, ayant travaillé en freelance en tant que designer et développeur full-stack ainsi qu’en tant que développeur javascript chez Formagraph. Je m'intéresse aux nouvelles technologies et à leurs différents domaines d’application et me tiens informé des dernières avancées dans ce domaine.
 
 ## Compétences
-### html
-Maitrise d'HTML5. Grand soin apporté à la sémantique du code.
+### HTML
+Maitrise d'HTML5. Grand soin apporté à la sémantique du markup.
 
-### css
+### CSS
 Maitrise du language ainsi que du preprocesseur Sass. Utilisation des techniques de BEM et OOCSS. Maitrise du framework Bootstrap.
 
-### javascript
-Maitrise de javascript ES6 ainsi que des frameworks Vue.js, Angular et React. /// des outils Webpack, Brunch et npm.
+### Javascript
+Maitrise de javascript ES6, des frameworks Vue.js, Angular et React, ainsi que des outils Webpack, Brunch et npm.
 
 ### Node.js
-- Sails.js
+Maitrise de Node.js et du framework Sails.js.
 
 ### PHP
-- Laravel
+Maitrise de PHP 7 ainsi que des frameworks Laravel et Symfony et du gestionnaire de paquets Composer.
 
 ### UI/UX design
 - Sketch
@@ -58,6 +58,7 @@ Site vitrine de l'association d'escalade Entre Temps.
 - Laravel
 
 ### Ad Libitum
+Site vitrine de l'agence de communication Ad Libitum.
 - Design
 - PHP
 - Laravel
@@ -68,6 +69,6 @@ Solution de E-commerce custom pour la marque de parfum Saint Côme.
 - Laravel
 
 ## Infos pratiques
-- arthur.riduet@gmail.com
+- Me contacter: arthur.riduet@gmail.com
 - Téléchargez mon CV
 - Code source
