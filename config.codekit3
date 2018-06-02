@@ -9,6 +9,23 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/.gitignore",
+		"oF": 0
+		},
+	"\/app.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/app.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/app.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -34,6 +51,17 @@
 		"oA": 0,
 		"oAP": "\/build\/index.html",
 		"oF": 0
+		},
+	"\/rule.png": {
+		"ft": 32768,
+		"iS": 484,
+		"oA": 0,
+		"oAP": "\/build\/rule.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/texts.md": {
 		"cB": 0,
@@ -63,7 +91,8 @@
 	"displayValue": "Arthur Riduet",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_gray",
-	"iconImageWasSetByUser": 0
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 549562987
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

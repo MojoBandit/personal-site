@@ -1,4 +1,156 @@
+// Variables
+$bg-color: #EDEDED;
+$text-color: darken($bg-color, 50%);
+$emp-color: darken($bg-color, 70%);
+$base-font-size: 14;
+$scale-ratio: 1.25;
+$leading: 1.7;
+
+// Functions
+@function leading($number) {
+  @return #{ $number * $leading + 'rem'};
+};
+
+@function pow($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $number;
+    }
+  }
+
+  @return $value;
+}
+
+@function scale($number) {
+  @return #{pow($scale-ratio, $number) + 'rem'};
+}
+
+// Styles
+html {
+  font-size: $base-font-size+px;
+  color: $text-color;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Helvetica", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: leading(1);
+}
+
 body {
-  background: #212121;
-  color: #EAEAEA;
+  background: $bg-color;
+  margin: 0;
+}
+
+main {
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: auto;
+  padding: leading(2);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: leading(1);
+  position: relative;
+}
+
+h1, h2, h3, h4 {
+  color: $emp-color;
+  letter-spacing: -.04em;
+  margin-top: 0;
+  font-weight: 700;
+  line-height: leading(1);
+}
+
+h1 {
+  font-size: scale(3);
+  margin-bottom: leading(.5);
+}
+
+h2 {
+  font-size: scale(2);
+  color: $text-color;
+}
+
+h3 {
+  font-size: scale(1);
+  margin-bottom: leading(1);
+}
+
+h4 {
+  font-size: scale(0);
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  line-height: leading(1);
+  margin-bottom: leading(1);
+}
+
+a {
+  color: $emp-color;
+}
+
+strong {
+  font-weight: 400;
+  color: $emp-color;
+  // background-color: rgb(249, 239, 0)
+}
+
+abbr {
+  cursor: help;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.grid {
+  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, .3) 1px, transparent 1px);
+  background-position: left top;
+  background-repeat: repeat;
+  background-size: 100% leading(1);
+}
+
+.tag-list {
+  height: leading(1);
+  margin-bottom: leading(1);
+  li {
+    display: inline;
+    color: $bg-color;
+    background: $text-color;
+    padding: .3em .7em;
+    font-size: scale(-2);
+    border-radius: 50px;
+  }
+}
+
+.titles-section {
+
+}
+
+.about-section {
+
+}
+
+.skills-section {
+
+}
+
+.work-section {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.misc-section {
+  position: absolute;
+  bottom: leading(2);
+  left: leading(2);
 }
