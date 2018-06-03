@@ -154,3 +154,14 @@ ul {
   bottom: leading(2);
   left: leading(2);
 }
+
+@media only screen and (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .misc-section {
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
+}

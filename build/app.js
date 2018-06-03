@@ -1,1 +1,0 @@
-function fadeIn(n,f){}

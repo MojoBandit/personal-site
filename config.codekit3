@@ -12,16 +12,16 @@
 	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/.gitignore",
-		"oF": 0
+		"oA": 1,
+		"oAP": "\/docs\/.gitignore",
+		"oF": 1
 		},
 	"\/app.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/app.js",
+		"oAP": "\/docs\/app.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -34,52 +34,30 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/app.css",
+		"oAP": "\/docs\/app.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"\/build": {
+	"\/CV.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/docs\/CV.pdf",
+		"oF": 1
+		},
+	"\/docs": {
 		"ft": 65536,
 		"oA": 1,
-		"oAP": "\/build\/build",
+		"oAP": "\/docs\/docs",
 		"oF": 0
 		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/build\/index.html",
+		"oAP": "\/docs\/index.html",
 		"oF": 0
-		},
-	"\/rule.png": {
-		"ft": 32768,
-		"iS": 484,
-		"oA": 0,
-		"oAP": "\/build\/rule.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/texts.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 1,
-		"oAP": "\/build\/texts.html",
-		"oF": 1,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
 		}
 	},
 "hooks": [
@@ -92,7 +70,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_gray",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 549562987
+	"lastBuiltDate": 549707835
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -349,7 +327,7 @@
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"buildFolderActive": 1,
-	"buildFolderName": "build",
+	"buildFolderName": "docs",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -2245,7 +2223,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": "\/build"
+	"websiteRelativeRoot": "\/docs"
 	},
 "settingsFileVersion": "3"
 }
