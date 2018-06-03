@@ -46,12 +46,6 @@
 		"oAP": "\/docs\/CV.pdf",
 		"oF": 1
 		},
-	"\/docs": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/docs\/docs",
-		"oF": 0
-		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -70,7 +64,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_gray",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 549707835
+	"lastBuiltDate": 549707991
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1466,7 +1460,7 @@
 		},
 	"esLintSourceType": 0,
 	"externalServerAddress": "http:\/\/localhost:8888",
-	"gitIgnoreBuildFolder": 1,
+	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
