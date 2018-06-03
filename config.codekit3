@@ -46,6 +46,12 @@
 		"oAP": "\/docs\/CV.pdf",
 		"oF": 1
 		},
+	"\/docs": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/docs\/docs",
+		"oF": 0
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -64,7 +70,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_gray",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 549732938
+	"lastBuiltDate": 549733409
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
