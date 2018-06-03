@@ -1,4 +1,5 @@
 // Variables
+
 $bg-color: #EDEDED;
 $text-color: darken($bg-color, 50%);
 $emp-color: darken($bg-color, 70%);
@@ -7,6 +8,7 @@ $scale-ratio: 1.25;
 $leading: 1.7;
 
 // Functions
+
 @function leading($number) {
   @return #{ $number * $leading + 'rem'};
 };
@@ -32,6 +34,7 @@ $leading: 1.7;
 }
 
 // Styles
+
 html {
   font-size: $base-font-size+px;
   color: $text-color;
@@ -92,6 +95,12 @@ p {
 
 a {
   color: $emp-color;
+  border-bottom: 2px solid #cac8c8;
+  text-decoration: none;
+  transition: border-bottom 200ms ease-out;
+  &:hover {
+    border-bottom: 2px solid $emp-color;
+  }
 }
 
 strong {
@@ -112,10 +121,25 @@ ul {
 }
 
 .grid {
-  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, .3) 1px, transparent 1px);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  padding: 0 leading(2);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: leading(1);
+  background-image: linear-gradient(to bottom, rgba(255, 12, 35, 0.12) 1px, transparent 1px);
   background-position: left top;
   background-repeat: repeat;
   background-size: 100% leading(1);
+}
+
+.grid--column {
+  height: 100%;
+  border-left: 1px solid hsla(200, 100%, 50%, .4);
+  border-right: 1px solid hsla(200, 100%, 50%, .4);
+  justify-self: stretch;
 }
 
 .tag-list {
@@ -155,8 +179,39 @@ ul {
   left: leading(2);
 }
 
+// Animation
+
+.fade-slide-down {
+  transition: transform 450ms  cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity 450ms  cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  transform: translateY(0);
+  opacity: 1;
+  &.hidden {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.expand-down {
+  transition: transform 1s ease-out;
+  transform: scaleY(100%);
+  transform-origin: top;
+  &.hidden {
+    transform: scaleY(0);
+  }
+}
+
+.fade-in {
+  transition: opacity 1s ease-out;
+  opacity: 1;
+  &.hidden {
+    opacity: 0;
+  }
+}
+
+// Responsive
+
 @media only screen and (max-width: 1000px) {
-  main {
+  main, .grid {
     grid-template-columns: 1fr;
   }
   .misc-section {
