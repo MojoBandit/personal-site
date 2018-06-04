@@ -48,7 +48,7 @@ body {
 }
 
 main {
-  max-width: 1600px;
+  max-width: 1700px;
   min-height: 100vh;
   margin: auto;
   padding: leading(2);
@@ -121,18 +121,24 @@ ul {
 }
 
 .grid {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: fixed;
+  background-image: linear-gradient(to bottom, rgba(255, 12, 35, 0.12) 1px, transparent 1px);
+  background-position: left top;
+  background-repeat: repeat;
+  background-size: 100% leading(1);
+}
+
+.grid--columns {
+  max-width: 1700px;
+  height: 100vh;
+  margin: auto;
   padding: 0 leading(2);
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: leading(1);
-  background-image: linear-gradient(to bottom, rgba(255, 12, 35, 0.12) 1px, transparent 1px);
-  background-position: left top;
-  background-repeat: repeat;
-  background-size: 100% leading(1);
 }
 
 .grid--column {
@@ -228,5 +234,11 @@ ul {
     position: relative;
     bottom: auto;
     left: auto;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  html {
+    font-size: 18px;
   }
 }
